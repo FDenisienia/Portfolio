@@ -1,6 +1,6 @@
 .section1 {
     background-color: #f5df4e;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +122,9 @@
 
 
 @media (min-width: 804px){
+    .section1 {
+        height: 100%;
+    }
     .freelancer {
         font-size: 2rem;
     }
@@ -142,6 +145,9 @@
 }
 
 @media (min-width:1200px){
+    .section1 {
+        height: 100%;
+    }
     .fondo-img {
         order: 1;
         margin-left: 200px;
