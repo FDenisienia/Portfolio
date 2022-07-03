@@ -1,0 +1,181 @@
+.sobre-mi-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sobre-mi {
+    background-color: #f5df4e;
+    padding: 3px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.conoceme {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.descripcion {
+    text-align: center;
+    padding: 0px 20px;
+
+}
+
+.descripcion span {
+    font-size: 1.2rem;
+}
+
+.descripcion span span {
+    font-weight: bold;
+    border-bottom: 3px #f5df4e solid;
+    font-size: 1.5rem;
+}
+
+.descripcion p {
+    margin-top: 20px;
+    line-height: 30px;
+}
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.experiencia div{
+    background-color: #f5df4e;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 70px;
+}
+
+.experiencia div span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: #212529;
+}
+
+.experiencia span span {
+    font-weight: bold;
+}
+
+.mi-informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px 0px;
+}
+
+.mi-informacion div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.mi-informacion div label {
+    margin-bottom: 10px;
+}
+
+.mi-informacion div span {
+    font-weight: bold;
+}
+
+.email span {
+    text-decoration: underline 2px solid;
+}
+
+
+@media (min-width: 700px) {
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencia div {  
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .experiencia div span  {
+        font-size: 10rem;
+        position: relative;
+        top: -50px;
+        left: -3px;
+    }
+    .sobre-mi {
+        margin-top: 0px;
+    }
+
+    .descripcion p {
+        padding: 0px 100px;
+    }
+
+    .mi-informacion {
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .descripcion-y-experiencia {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        width: 60%;
+    }
+
+    .descripcion {
+        text-align: start;
+    }
+
+    .descripcion p {
+        text-align: start;
+        padding: 0;
+    }
+    
+    .experiencia {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .experiencia div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .experiencia div span {
+        font-size: 7rem;
+        position: relative;
+        top: -45px;
+        left: -3px;
+    }
+
+    .mi-informacion div {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .mi-informacion {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .sobre-mi {
+        margin-top: 50px;
+    }
+
+    .conoceme {
+        margin-bottom: 0px;
+    }
+}

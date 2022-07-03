@@ -1,0 +1,158 @@
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumen-contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+}
+
+.educacion {
+    border-left: 3px solid #f5df4e;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.educacion-h {
+    margin-left: 5px;
+}
+
+.udemy {
+    margin: 15px 15px;
+    line-height: 25px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.skill-h3 {
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.button-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button-cv button {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 25px;
+    color: black;
+}
+
+.button-cv button:hover {
+    background-color: #212529;
+    transition: 1s;
+    cursor: pointer;
+    color: white;
+}
+
+.skills-contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.contenedor-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-range span {
+    font-weight: bold;
+}
+
+.contenedor-porcentaje {
+    width: 100%;
+    height: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.contenedor-porcentaje div {
+    height: 7px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #f5df4e;
+}
+
+.html {
+    width: 100%;
+}
+
+.css {
+    width: 100%;
+}
+
+.bootstrap {
+    width: 90%;
+}
+
+.javascript {
+    width: 75%;
+}
+
+.react {
+    width: 30%;
+}
+
+.node {
+    width: 30%;
+}
+
+@media (min-width: 700px){   
+
+    .section4 {
+        padding: 0 50px;
+    }
+
+    .skills-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resumen-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .skills {
+        width: 80%;
+    }
+    
+    .button-cv {
+        margin-top: 50px;
+    }
+
+}
+
+@media (min-width: 1400px){
+    .section4 {
+        padding: 0 250px;
+
+    }
+
+    .resumen-contenedor {
+        width: 70%;
+    }
+
+    .skills {
+        padding: 0 150px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+}

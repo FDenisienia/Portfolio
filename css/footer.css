@@ -1,0 +1,275 @@
+.footer {
+    background-color: #f5df4e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contacto {
+    margin-top: 50px;
+}
+
+.disfruto {
+    padding: 0px 30px;
+    margin-bottom: 15px;
+}
+
+.viviendo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.viviendo h4 {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.viviendo span {
+    margin-bottom: 10px;
+}
+
+.llamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.llamada h4 {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.redes-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.redes-footer a {
+    margin: 25px 15px;
+    color: #212529;
+}
+
+.redes-footer a:hover {
+    color: white;
+    transition: 1s;
+}
+
+.footer2 {
+    margin-top: 50px;
+}
+
+.footer2 h3 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 0px 15px
+}
+
+.form div label {
+    margin-bottom: 10px;
+}
+
+.form div input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d7c445;
+}
+
+.form div textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d7c445;
+
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-enviar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #212529;
+    color: white;
+    width: 100px;
+    height: 40px;
+    padding: 5px 15px;
+}
+
+.footer-enviar:hover {
+    cursor: pointer;
+    background-color: rgb(36, 33, 33);
+    transition: .5s;
+}
+
+.footer-enviar svg {
+    margin-left: 7px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #212529;
+}
+
+.copy1 {
+    display: flex;
+    color: white;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.copy1 span span {
+    color: #f5df4e;
+    text-decoration: underline;
+}
+
+.copy2 {
+    display: flex;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.copy2 span span {
+    color: #f5df4e;
+    text-decoration: underline;
+}
+
+@media (min-width:750px) {
+    .disfruto {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .form div {
+        padding: 0px 100px;
+    }
+    
+    .redes-footer {
+        margin-top: 50px;
+    }
+
+    .footer-contenedor {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-contenedor {
+        flex-direction: row;
+        justify-content: center;
+        width: 65%;
+    }
+
+        
+    .footer1 {
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .copyright {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .copy1, .copy2 {
+        margin: 0;
+    }
+
+    .llamada {
+        justify-content: start;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    .viviendo {
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .llamada h4, .viviendo h4 {
+        margin-bottom: 10px;
+    }
+
+    .llamada span, .viviendo span {
+        padding: 0;
+    }
+
+    .disfruto {
+        text-align: start;
+        padding: 0;
+        margin-top: 25px;
+        width: 75%;
+    }
+
+    .redes-footer {
+        justify-content: start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .redes-footer a {
+        margin-left: 0;
+    }
+
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .footer2 h3{
+        text-align: start;
+    }
+
+    .form div {
+        padding: 0px;
+    }
+
+    .form div input {
+        width: 600px;
+    }
+    
+}

@@ -1,0 +1,162 @@
+.section1 {
+    background-color: #f5df4e;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+.fondo-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.freelance {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.freelancer {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.developer {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    width: 11.5ch;
+    animation: escribir 1.5s steps(36), parpadeo 1s infinite alternate;
+    overflow: hidden;
+    color: #212529;
+}
+
+@keyframes escribir {
+    from { width: 0 }
+}
+
+@keyframes parpadeo {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.freelance-buttons button {
+    width: 150px;
+    border: none;
+}
+
+.freelance-buttons button svg {
+    position: relative;
+    top: 5px;
+}
+
+.trabajo {
+    background-color: #212529;
+    color: white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.trabajo:hover {
+    cursor: pointer;
+    background-color: rgb(36, 33, 33);
+    transition: .5s;
+}
+
+.contacto {
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contacto:hover {
+    cursor: pointer;
+}
+
+.contacto img {
+    position: relative;
+    top: 3px;
+}
+
+.bi-arrow-down {
+    margin: 25px 0px;
+    animation: rebote 1s infinite;
+}
+
+@keyframes rebote {
+    50% {
+        position: relative;
+        top: 5px;
+    }
+}
+
+
+
+
+
+@media (min-width: 804px){
+    .freelancer {
+        font-size: 2rem;
+    }
+    .developer {
+        font-size: 4rem;
+    }
+
+    .fondo-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fondo-img img {
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media (min-width:1200px){
+    .fondo-img {
+        order: 1;
+        margin-left: 200px;
+        margin-bottom: 50px;
+        height: 500px;
+        width: 500px;
+    }
+
+    .fondo-img img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .section1-container {
+        flex-direction: row;
+    }
+
+}
