@@ -8,17 +8,17 @@ let incorrectoEmail = document.getElementById('incorrecto-email')
 let incorrectoConsulta = document.getElementById('incorrecto-consulta')
 
 
-const validarYEnviar = () => {
+const validarYEnviar = (e) => {
     let patronNombre = /[a-zA-Z]{3}/
     let patronEmail = /@/
     let patronConsulta = /[a-zA-Z]/
 
     if(patronNombre.test(nombre.value)){
         incorrecto.classList.remove('incorrecto-show')
+
     } else {
         incorrecto.classList.add('incorrecto-show')
-        return false
-
+        e.preventDefault()
     }
 
     if(patronEmail.test(email.value)) {
@@ -26,16 +26,16 @@ const validarYEnviar = () => {
 
     } else {
         incorrectoEmail.classList.add('incorrecto-show')
-        return false
+        e.preventDefault()
     }
 
 
     if(patronConsulta.test(textarea.value)) {
         incorrectoConsulta.classList.remove('incorrecto-show')
-        return false
+
     }   else {
         incorrectoConsulta.classList.add('incorrecto-show')
-
+        e.preventDefault()
     }
 
 }
