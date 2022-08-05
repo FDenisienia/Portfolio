@@ -23,6 +23,8 @@
     align-items: center;
 }
 
+
+
 @media (min-width: 750px) {
     .contenedor-proyecto-imagenes {
         grid-template-columns: repeat(2, 1fr);
