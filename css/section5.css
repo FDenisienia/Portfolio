@@ -11,10 +11,16 @@
     margin: 25px 0px;
 }
 
-.contenedor-proyecto-imagenes img {
+.proyecto-container a img {
     width: 350px;
     height: 350px;
     margin: 5px;
+}
+
+.proyecto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 750px) {

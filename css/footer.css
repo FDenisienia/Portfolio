@@ -102,13 +102,24 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #d7c445;
+    padding: 5px;
+}
+
+.form div input:focus {
+    outline: none;
+    border-bottom: 1px solid #d7c445;
 }
 
 .form div textarea {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #d7c445;
+    padding: 5px;
+}
 
+.form div textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #d7c445;
 }
 
 .footer-button {
@@ -172,6 +183,17 @@
 .copy2 span span {
     color: #f5df4e;
     text-decoration: underline;
+}
+
+
+.incorrecto {
+    display: none;
+    margin-top: 10px;
+}
+
+.incorrecto-show {
+    display: flex;
+    color: red;
 }
 
 @media (min-width:750px) {
